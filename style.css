@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --global-color-bg: #191919;
+  --global-color-text1: #191919;
+  --global-color-text2: #666666;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+}
+html > body {
+  background-color: #fff;
+  background-color: #f4f2ee;
+  color: #333;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica Neue,
+    Arial,
+    Noto Sans,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol,
+    Noto Color Emoji;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html > body > header {
+  display: none;
+}
+html > body > header .container {
+  flex-direction: column;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex: 1 0 auto;
+
+  flex-direction: column;
+
+  display: flex;
+  gap: 0px 0px;
+  row-gap: 0px;
+  column-gap: 0px;
+  border-style: solid;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-color: #dfddda;
+  border-color: #dfddda;
+  border-radius: 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  align-self: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+html > body > header .container .background {
+  display: flex;
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 0px;
+  row-gap: 0px;
+  column-gap: 0px;
+  border-radius: 12px 12px 0px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  background-color: var(--global-color-bg);
+}
+html > body > header .container .information {
+  padding-block-end: 24px;
+  padding-block-start: 60px;
+  text-align: initial;
+
+  flex-direction: column;
+  flex-basis: auto;
+
+  flex-direction: column;
+
+  display: flex;
+  min-height: 52px;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 0px;
+  row-gap: 0px;
+  column-gap: 0px;
+  border-radius: 0px 0px 12px 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 60px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  background-color: #fff;
+}
+
+html > body > main {
+  display: flex;
+
+  padding-block-end: 24px;
+  padding-block-start: 24px;
+  text-align: initial;
+
+  gap: 24px 24px;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-inline-end: 0;
+  padding-inline-start: 0;
+  width: 100%;
+
+  flex-direction: column;
+
+  align-content: initial;
+  align-items: initial;
+  align-self: auto;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: initial;
+  justify-content: initial;
+}
+html > body > main > section {
+  font-family: "Inter", Sans-serif;
+  display: flex;
+  gap: 0px 0px;
+  row-gap: 0px;
+  column-gap: 0px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-color: #dfddda;
+  border-radius: 12px;
+  background-color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+html > body > main > section a {
+  cursor: pointer;
+  background-color: #fff0;
+  color: inherit;
+  font-size: inherit;
+  line-height: unset;
+  box-shadow: none;
+  text-decoration: none;
+}
+html > body > main > section h1,
+html > body > main > section h2,
+html > body > main > section h3,
+html > body > main > section h4,
+html > body > main > section h5,
+html > body > main > section h6 {
+  font-weight: 600;
+  color: var(--global-color-text1);
+}
+html > body > main > section h1 {
+  font-size: 28px;
+  line-height: 28px;
+}
+html > body > main > section h2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+html > body > main > section h3 {
+  font-size: 20px;
+  line-height: 20px;
+}
+html > body > main > section h4 {
+  font-size: 18px;
+  line-height: 18px;
+}
+html > body > main > section h5 {
+  font-size: 16px;
+  line-height: 16px;
+}
+html > body > main > section h6 {
+  font-size: 14px;
+  line-height: 14px;
+}
+html > body > main > section a,
+html > body > main > section span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--global-color-text2);
+}
+html > body > main > section a:hover {
+  text-decoration: underline;
+}
+html > body > main > section a > span {
+  font-weight: 600;
+}
+html > body > main > section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px 24px;
+  min-height: 48px;
+  padding: 24px;
+  width: 100%;
+}
+html > body > main > section > .container > .content > .item {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 12px 12px;
+  row-gap: 12px;
+  column-gap: 12px;
+  flex-wrap: nowrap;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+}
+html > body > main > section > .container > .content > .item > *:first-child {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: flex-end;
+  gap: 4px 4px;
+  row-gap: 4px;
+  column-gap: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 25%;
+}
+html > body > main > section > .container > .content > .item > *:last-child {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  gap: 4px 4px;
+  row-gap: 4px;
+  column-gap: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 75%;
+}
+html > body > main > section > .container > .content > .item img {
+  width: 48px;
+  max-width: 48px;
+  height: 48px;
+  object-fit: contain;
+  object-position: center center;
+  opacity: 1;
+  border-radius: 4px 4px 4px 4px;
+}
+
+html > body > main > section .content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px 24px;
+  row-gap: 24px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+html > body > main > section .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0px 0px;
+  row-gap: 0px;
+  column-gap: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+html > body > main > section .icon {
+  width: 24px;
+  height: 24px;
+}
+html > body > main > section .icon.small {
+  width: 12px;
+  height: 12px;
+}
+html > body > main > section .row {
+  display: flex;
+  flex-direction: row;
+}
+html > body > main > section .col {
+  display: flex;
+  flex-direction: column;
+}
+html > body > main > section .end {
+  align-content: flex-end;
+  align-items: flex-end;
+  text-align: end;
+}
+
+html > body > main > section .center {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+html > body > main > section .center {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
