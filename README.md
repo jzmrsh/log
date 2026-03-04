@@ -28,13 +28,10 @@ As entradas são organizadas de forma que cada arquivo represente um momento ou 
 
 ### 🛠️ Tecnologias
 
-* **Static Site Generation:** (Ex: Jekyll / Hugo / Next.js - *ajuste conforme seu caso*)
-* **Hosting:** (Ex: Vercel / Netlify / GitHub Pages)
+* **Static Site Generation:** YES
+* **Hosting:** GitHub Pages
 * **Styling:** Custom CSS minimalista.
 
 ### 📫 Contato
 
 Sinta-se à vontade para explorar os pensamentos ou entrar em contato através do domínio principal: [jzmrsh.com](https://jzmrsh.com).
-3. Personalize a seção de "Tecnologias" com as ferramentas exatas que você usou para buildar o site.
-
-**Gostaria que eu escrevesse uma seção de "Guia de Contribuição" ou detalhasse como automatizar o deploy dessas notas?**
