@@ -234,7 +234,7 @@ html > body > header .container .information .description {
 html > body > main {
   display: flex;
 
-  padding: 24px;
+  padding: 24px 24px 48px;
   text-align: initial;
 
   gap: 24px 24px;
@@ -258,7 +258,7 @@ html > body > main {
 }
 @media (max-width: 768px) {
   html > body > main {
-    padding: 24px 12px;
+    padding: 24px 12px 48px;
   }
 }
 html > body > main > section {
