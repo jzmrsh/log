@@ -225,7 +225,6 @@ html > body > header .container .information .action {
   gap: 8px 8px;
   flex-wrap: wrap;
   align-content: center;
-  padding: 10px 0px;
 }
 html > body > header .container .information .description {
   display: flex;
