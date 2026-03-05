@@ -255,7 +255,7 @@ html > body > main {
   flex-wrap: initial;
   justify-content: initial;
 }
-@media (max-width: 424px) {
+@media (max-width: 768px) {
   html > body > main {
     padding: 24px 12px;
   }
@@ -270,7 +270,7 @@ html > body > main > section {
   padding: 0px;
   margin: 0px;
 }
-@media (max-width: 424px) {
+@media (max-width: 768px) {
   html > body > main > section {
     /* border-radius: 0px; */
     /* border-width: 1px 0px 1px 0px; */
@@ -332,7 +332,7 @@ html > body > main > section .h6 {
   font-size: var(--h6-font-size);
   line-height: var(--h6-line-height);
 }
-@media (max-width: 424px) {
+@media (max-width: 768px) {
   :root {
     /* h1 */
     --h1-font-size: 26px;
@@ -368,7 +368,7 @@ html > body > main > section .container {
   padding: 24px 24px 48px 24px;
   width: 100%;
 }
-@media (max-width: 424px) {
+@media (max-width: 768px) {
   html > body > main > section .container {
     gap: 12px;
     min-height: 24px;
@@ -437,7 +437,7 @@ html > body > main > section .content {
   flex-wrap: wrap;
   align-content: center;
 }
-@media (max-width: 424px) {
+@media (max-width: 768px) {
   html > body > main > section .content {
     gap: 12px;
   }
