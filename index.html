@@ -1219,11 +1219,20 @@
       });
 
       // IFRAME
-      window.onload = function() {
-        const height = document.body.scrollHeight;
-        window.parent.postMessage({ 'type': 'resize', 'height': height }, '*');
-      };
+      const observer = new ResizeObserver(entries => {
+          for (let entry of entries) {
+              const height = document.documentElement.scrollHeight;
+              window.parent.postMessage({ 
+                  type: 'resize', 
+                  height: height 
+              }, '*'); 
+          }
+      });
+
+// Começa a observar o corpo da página
+observer.observe(document.body);
     </script>
   </body>
 </html>
+
 
