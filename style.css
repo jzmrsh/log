@@ -272,8 +272,8 @@ html > body > main > section {
 }
 @media (max-width: 424px) {
   html > body > main > section {
-    border-radius: 0px;
-    border-width: 1px 0px 1px 0px;
+    /* border-radius: 0px; */
+    /* border-width: 1px 0px 1px 0px; */
   }
 }
 html > body > main > section a {
