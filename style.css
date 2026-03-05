@@ -233,14 +233,13 @@ html > body > header .container .information .description {
 html > body > main {
   display: flex;
 
-  padding-block-end: 24px;
-  padding-block-start: 24px;
+  padding: 24px;
   text-align: initial;
 
   gap: 24px 24px;
   height: 100%;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 792px;
   padding-inline-end: 0;
   padding-inline-start: 0;
   width: 100%;
@@ -255,6 +254,11 @@ html > body > main {
   flex-shrink: 1;
   flex-wrap: initial;
   justify-content: initial;
+}
+@media (max-width: 424px) {
+  html > body > main {
+    padding: 24px 12px;
+  }
 }
 html > body > main > section {
   font-family: "Inter", Sans-serif;
