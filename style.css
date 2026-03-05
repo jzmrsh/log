@@ -5,6 +5,7 @@
   --global-color-alt: #0a66c2;
   --global-color-text1: #191919;
   --global-color-text2: #666666;
+  --global-color-text3: #999999;
 
   /* h1 */
   --h1-font-size: 28px;
@@ -397,7 +398,7 @@ html > body > main > section > .container > .content > .item.linked:after {
   height: 24px;
   border-radius: 9px;
   z-index: 1;
-  background-color: var(--global-color-text2);
+  background-color: var(--global-color-text3);
   /* opacity: 60%; */
 }
 @media (max-width: 768px) {
