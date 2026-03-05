@@ -379,12 +379,43 @@ html > body > main > section#update .container {
   padding: 12px;
 }
 html > body > main > section > .container > .content > .item {
+  position: relative;
   flex: 0 1 auto;
   display: flex;
   flex-direction: row;
   gap: 12px 12px;
   flex-wrap: nowrap;
   width: 100%;
+}
+html > body > main > section > .container > .content > .item.linked:before,
+html > body > main > section > .container > .content > .item.linked:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: calc(25% + 9px);
+  width: 4px;
+  height: 24px;
+  border-radius: 9px;
+  z-index: 1;
+  background-color: var(--global-color-text2);
+  /* opacity: 60%; */
+}
+@media (max-width: 768px) {
+  html > body > main > section > .container > .content > .item.linked:before,
+  html > body > main > section > .container > .content > .item.linked:after {
+    bottom: -9px;
+  }
+}
+html > body > main > section > .container > .content > .item.linked:after {
+  bottom: 4px;
+  left: calc(25% + 7px);
+  width: 8px;
+  height: 8px;
+}
+@media (max-width: 768px) {
+  html > body > main > section > .container > .content > .item.linked:after {
+    bottom: 9px;
+  }
 }
 html > body > main > section > .container > .content > .item > *:first-child {
   display: flex;
