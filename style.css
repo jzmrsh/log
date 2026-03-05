@@ -396,10 +396,10 @@ html > body > main > section > .container > .content > .item.linked:after {
   left: calc(25% + 9px);
   width: 4px;
   height: 24px;
-  border-radius: 9px;
+  border-radius: 24px;
   z-index: 1;
   background-color: var(--global-color-text3);
-  /* opacity: 60%; */
+  border: solid 1px white;
 }
 @media (max-width: 768px) {
   html > body > main > section > .container > .content > .item.linked:before,
