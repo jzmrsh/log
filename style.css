@@ -178,7 +178,7 @@ html > body > header .container .picture .image {
   left: calc(50% - 80px);
   z-index: 2;
   background-color: #fff;
-  background-image: url(https://www.jozuemarsh.com/log/wp-content/uploads/sites/8/2026/01/profile-person.jpg);
+  background-image: url("media/Person.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
