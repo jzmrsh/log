@@ -7,6 +7,8 @@
   --global-color-text2: #666666;
   --global-color-text3: #999999;
 
+  --background-color: #f4f2ee;
+
   /* h1 */
   --h1-font-size: 28px;
   --h1-line-height: 28px;
@@ -28,7 +30,7 @@
 
   /*  border */
   --border: solid 1px #eee;
-  --border-radius: 12px;
+  --border-radius: 24px;
 }
 *,
 :after,
@@ -44,7 +46,7 @@ html {
 html > body {
   position: relative;
   background-color: #fff;
-  background-color: #f4f2ee;
+  background-color: var(--background-color);
   color: #333;
   font-family:
     -apple-system,
@@ -86,9 +88,9 @@ html > body::before {
   background-image: linear-gradient(0deg, #ffffff 0%, #ffffff00 256px);
 }
 html > body > header {
-  background-color: #fff;
-  border: var(--border);
-  border-width: 0px 0px 1px 0px;
+  /* background-color: #fff; */
+  /* border: var(--border); */
+  /* border-width: 0px 0px 1px 0px; */
 }
 html > body > header button,
 html > body > header .button {
@@ -125,6 +127,7 @@ html > body > header .button svg {
   height: var(--h5-line-height);
 }
 html > body > header .container {
+  position: relative;
   flex-direction: column;
   flex-basis: auto;
   flex: 1 0 auto;
@@ -136,8 +139,17 @@ html > body > header .container {
   align-self: center;
   flex-grow: 1;
   flex-shrink: 0;
+  padding-top: 248px;
+}
+@media (max-width: 768px) {
+  html > body > header .container {
+    padding-top: 200px;
+  }
 }
 html > body > header .container .background {
+  position: absolute;
+  inset: 0;
+
   display: flex;
   min-height: 200px;
   justify-content: center;
@@ -146,18 +158,56 @@ html > body > header .container .background {
   row-gap: 0px;
   column-gap: 0px;
   /* border-radius: 12px 12px 0px 0px; */
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin: 0px;
+  padding: 0px;
 
   background-color: var(--global-color-bg);
+  background: linear-gradient(180deg, black 248px, var(--background-color));
+  /* mask: linear-gradient(180deg, black, transparent); */
+  /* -webkit-mask: linear-gradient(180deg, black, transparent); */
+}
+@media (max-width: 768px) {
+  html > body > header .container .background {
+  }
+}
+html > body > header .container .background > div {
+  position: absolute;
+  inset: 0;
+  text-align: initial;
+
+  flex-direction: column;
+  flex-basis: auto;
+
+  flex-direction: column;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  /* border: var(--border); */
+  border-radius: var(--border-radius);
+  padding: 48px;
+
+  max-width: 800px;
+  max-height: 200px;
+  margin: 24px auto;
+
+  background-color: black;
+  background-image: url("media/Background.jpg");
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-repeat: space;
+}
+@media (max-width: 768px) {
+  html > body > header .container .background > div {
+    border-radius: 0;
+    padding: 24px;
+    margin: 0 auto;
+  }
 }
 html > body > header .container .picture {
+  z-index: 1;
   position: relative;
   width: 100%;
   height: 0px;
@@ -182,8 +232,11 @@ html > body > header .container .picture .image {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  box-shadow: 0 0 20px -10px black;
 }
 html > body > header .container .information {
+  z-index: 1;
+  position: relative;
   padding-block-end: 24px;
   padding-block-start: 60px;
   text-align: initial;
@@ -198,12 +251,22 @@ html > body > header .container .information {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  /* border-radius: 0px 0px 12px 12px; */
+  border: var(--border);
+  border-radius: var(--border-radius);
   padding: 60px 24px 24px 24px;
 
   background-color: #fff;
   max-width: 800px;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  html > body > header .container .information {
+    /* border-top: none; */
+    border-left: none;
+    border-right: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 }
 html > body > header .container .information > * {
   width: 100%;
@@ -211,11 +274,32 @@ html > body > header .container .information > * {
 html > body > header .container .information .name {
   display: flex;
   flex-direction: column;
-  gap: 0px;
   text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
 }
 html > body > header .container .information .name * {
   line-height: 1.1;
+}
+html > body > header .container .information .name h2 {
+}
+html > body > header .container .information .name h2::before,
+html > body > header .container .information .name h2::after {
+  content: "";
+  display: inline-block;
+  width: var(--h2-font-size);
+  height: var(--h2-font-size);
+  background: transparent;
+  margin-left: 6px;
+  margin-bottom: calc(0px - (var(--h2-font-size) / 8));
+}
+html > body > header .container .information .name h2::after {
+  background-image: url("media/Verified.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 html > body > header .container .information .action {
   display: flex;
@@ -261,6 +345,7 @@ html > body > main {
   }
 }
 html > body > main > section {
+  position: relative;
   font-family: "Inter", Sans-serif;
   display: flex;
   gap: 0px 0px;
@@ -269,6 +354,10 @@ html > body > main > section {
   border-radius: var(--border-radius);
   padding: 0px;
   margin: 0px;
+  /* transition:
+    height 333ms ease-in-out,
+    max-height 333ms ease-in-out,
+    min-height 333ms ease-in-out; */
 }
 @media (max-width: 768px) {
   html > body > main > section {
@@ -367,6 +456,7 @@ html > body > main > section .container {
   min-height: 48px;
   padding: 24px 24px 48px 24px;
   width: 100%;
+  height: 100%;
 }
 @media (max-width: 768px) {
   html > body > main > section .container {
@@ -439,6 +529,7 @@ html > body > main > section > .container > .content > .item > *:last-child > *:
 html > body > main > section > .container > .content > .item > *:last-child > *:first-child * {
   font-weight: 600;
 }
+html > body > main > section > .container > .content > .item .img,
 html > body > main > section > .container > .content > .item img {
   width: 48px;
   max-width: 48px;
@@ -449,6 +540,9 @@ html > body > main > section > .container > .content > .item img {
   border: var(--border);
   border-radius: var(--border-radius);
   padding: 4px;
+}
+html > body > main > section > .container > .content > .item div.img {
+  border: none;
 }
 html > body > main > section#language > .container > .content > .item img {
   width: 24px;
@@ -512,4 +606,24 @@ html > body > main > section .center {
 
 .hide {
   display: none !important;
+}
+
+/* Add to your CSS */
+.accordion-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em;
+  height: 1.2em;
+  flex-shrink: 0;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.accordion-icon.open {
+  transform: rotate(180deg);
 }
