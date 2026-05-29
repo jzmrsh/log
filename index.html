@@ -175,7 +175,7 @@
           window.parent.postMessage(
             {
               type: "resize",
-              height: 100, // height,
+              height: height,
             },
             "*"
           );
@@ -183,7 +183,7 @@
       });
 
       // Começa a observar o corpo da página
-      observer.observe(document.body);
+      observer.observe(document.getElementsByTagName("body > main"));
     </script>
   </body>
 </html>
