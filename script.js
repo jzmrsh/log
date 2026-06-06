@@ -5,7 +5,7 @@
 const DATA = {
   // ── Data de atualização ───────────────────────────────────────────────────
   update: {
-    date: "29/01/2026 às 22:22",
+    date: "02/06/2026 às 18:52",
   },
 
   // ── Formação Acadêmica ────────────────────────────────────────────────────
@@ -77,6 +77,24 @@ const DATA = {
       schoolName: "Escola Virtual de Governo",
       instructorUrl: "https://esr.rnp.br/",
       instructorName: "Secretaria de Governo Digital e Escola Superior de Redes/RNP",
+    },
+    {
+      period: "",
+      certUrl: "https://www.escolavirtual.gov.br/documentos/validacao/certificadocheck/79add04c-ce16-4630-8fd4-2765fe3aa92b",
+      certTitle: "Docência Plural - Formação em Interculturalidade e Bilinguismo",
+      schoolUrl: "https://atendi.men/evgov",
+      schoolName: "Escola Virtual de Governo",
+      instructorUrl: "https://oei.int/",
+      instructorName: "Organização dos Estados Ibero-Americanos",
+    },
+    {
+      period: "",
+      certUrl: "https://www.escolavirtual.gov.br/documentos/validacao/certificadocheck/695e668b-a9db-4685-b700-5db524f49446",
+      certTitle: "Fundamentos e Metodologia da Educação Corporativa",
+      schoolUrl: "https://atendi.men/evgov",
+      schoolName: "Escola Virtual de Governo",
+      instructorUrl: "https://www.gov.br/pt-br/orgaos/secretaria-especial-da-receita-federal-do-brasil",
+      instructorName: "Secretaria Especial da Receita Federal do Brasil",
     },
     {
       period: "",
@@ -736,8 +754,8 @@ function renderUpdate() {
     el.textContent = formattedDate;
   });
 
-  //   const span = el('[autoupdate="currentdate"]');
-  //   if (span) span.textContent = DATA.update.date;
+  const span = el('[autoupdate="changeddate"]');
+  if (span) span.textContent = DATA.update.date;
 }
 
 // ── Formação Acadêmica ────────────────────────────────────────────────────────
