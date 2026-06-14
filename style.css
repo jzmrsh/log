@@ -267,7 +267,7 @@ html > body > header .container .picture .image::before {
   border-radius: 224px;
   z-index: -1;
   animation: slowspin 6s linear infinite;
-  transform-origin: center; 
+  transform-origin: center;
 }
 html > body > header .container .picture .image::after {
   content: "";

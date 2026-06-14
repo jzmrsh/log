@@ -3,12 +3,9 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 const DATA = {
-  // ── Data de atualização ───────────────────────────────────────────────────
   update: {
-    date: "14/06/2026 às 12:45",
+    date: "14/06/2026 às 14:57",
   },
-
-  // ── Formação Acadêmica ────────────────────────────────────────────────────
   school: [
     {
       active: false, // desativado
@@ -66,8 +63,6 @@ const DATA = {
       text4: "Minas Gerais, Brasil",
     },
   ],
-
-  // ── Certificações / Cursos ────────────────────────────────────────────────
   course: [
     {
       text1: "2026",
@@ -626,8 +621,6 @@ const DATA = {
       text4: "Câmara de Nova Serrana",
     },
   ],
-
-  // ── Atuação Profissional ──────────────────────────────────────────────────
   job: [
     {
       text1: "2025/Atual",
@@ -728,27 +721,55 @@ const DATA = {
       text4: "Presencial • Nova Serrana, MG",
     },
   ],
-
-  // ── Idiomas ───────────────────────────────────────────────────────────────
-  language: {
-    // basic: [
-    //   { imgSrc: "media/Flag/Italy.png", name: "Italiano", url: "https://pt.duolingo.com/course/it/pt/", active: false },
-    //   { imgSrc: "media/Flag/Germany.png", name: "Alemão", url: "https://pt.duolingo.com/course/de/pt/", active: false },
-    //   { imgSrc: "media/Flag/France.png", name: "Francês", url: "https://pt.duolingo.com/course/fr/pt/", active: false },
-    //   { imgSrc: "media/Flag/Spain.png", name: "Espanhol", url: "https://pt.duolingo.com/course/es/pt/", active: false },
-    //   { imgSrc: "media/Flag/United-States.png", name: "Inglês", url: "https://pt.duolingo.com/course/en/pt/", active: true },
-    // ],
-    native: [
-      {
-        imgSrc: "media/Flag/Brazil.png",
-        name: '"Brasileiro" (Português)',
-        url: "https://atendi.men/emfa",
-        text3: "Escola Frei Ambrósio",
-      },
-    ],
-  },
-
-  // ── Prêmios e Títulos ─────────────────────────────────────────────────────
+  language: [
+    {
+      active: false,
+      text1: "Básico",
+      child: [
+        {
+          imgSrc: "media/Flag/Italy.png",
+          text2: "Italiano",
+          link3: "https://pt.duolingo.com/course/it/pt/",
+          text3: "Duolingo",
+        },
+        {
+          imgSrc: "media/Flag/Germany.png",
+          text2: "Alemão",
+          link3: "https://pt.duolingo.com/course/de/pt/",
+          text3: "Duolingo",
+        },
+        {
+          imgSrc: "media/Flag/France.png",
+          text2: "Francês",
+          link3: "https://pt.duolingo.com/course/fr/pt/",
+          text3: "Duolingo",
+        },
+        {
+          imgSrc: "media/Flag/Spain.png",
+          text2: "Espanhol",
+          link3: "https://pt.duolingo.com/course/es/pt/",
+          text3: "Duolingo",
+        },
+        {
+          imgSrc: "media/Flag/United-States.png",
+          text2: "Inglês",
+          link3: "https://pt.duolingo.com/course/en/pt/",
+          text3: "Duolingo",
+        },
+      ],
+    },
+    {
+      text1: "Nativo",
+      child: [
+        {
+          imgSrc: "media/Flag/Brazil.png",
+          text2: '"Brasileiro" (Português)',
+          link3: "https://atendi.men/emfa",
+          text3: "Escola Frei Ambrósio",
+        },
+      ],
+    },
+  ],
   award: [
     {
       text1: "2025",
@@ -822,136 +843,163 @@ const DATA = {
       text4: "Futsal • 7º A",
     },
   ],
-
-  // ── Produções ─────────────────────────────────────────────────────────────
-  production: {
-    own: [
-      {
-        text1: "2025",
-        url: "https://www.youtube.com/watch?v=5YbPwWMYeQU",
-        title: "Luxury and Progress",
-        format: "Single",
-        artistUrl: "https://atendi.men/music",
-        artist: "JOZÜEMARSH",
-      },
-      {
-        url: "https://www.youtube.com/watch?v=CNyYqTGtavg",
-        title: "Soul",
-        format: "Single",
-        artistUrl: "https://atendi.men/music",
-        artist: "JOZÜEMARSH",
-      },
-      {
-        text1: "2024",
-        url: "https://www.youtube.com/watch?v=EFUJJurtffI",
-        title: "Get It Up (VIP Remix)",
-        format: "Single",
-        artistUrl: "https://atendi.men/music",
-        artist: "JOZÜEMARSH",
-      },
-      {
-        url: "https://www.youtube.com/watch?v=ZEou6RmbadU",
-        title: "Get It Up",
-        format: "Single",
-        artistUrl: "https://atendi.men/music",
-        artist: "JOZÜEMARSH",
-      },
-      {
-        text1: "2022",
-        url: "https://www.youtube.com/watch?v=8xB-i9omrz0",
-        title: "Beija-Flor",
-        format: "Single",
-        artistUrl: "https://atendi.men/music",
-        artist: "JOZÜEMARSH",
-      },
-      {
-        url: "https://www.youtube.com/watch?v=Rw_aVQAXsuU",
-        title: "Lost In A Box",
-        format: "Single",
-        artistUrl: "https://atendi.men/music",
-        artist: "JOZÜEMARSH",
-      },
-      {
-        text1: "2019",
-        url: "https://www.youtube.com/watch?v=Ls7WxZzpHAM",
-        title: "Lavender Town",
-        format: "Single",
-        artistUrl: "https://atendi.men/music",
-        artist: "JOZÜEMARSH",
-      },
-      {
-        url: "https://www.youtube.com/watch?v=4ji4ASp5jxE",
-        title: "Raven",
-        format: "Single",
-        artistUrl: "https://atendi.men/music",
-        artist: "JOZÜEMARSH",
-      },
-      {
-        url: "https://www.youtube.com/watch?v=hfUtlC4Z1R4",
-        title: "Life",
-        format: "Single",
-        artistUrl: "https://atendi.men/music",
-        artist: "JOZÜEMARSH",
-      },
-      {
-        url: "https://www.youtube.com/watch?v=JoxxyxbKBSA&list=OLAK5uy_lDK8jUK50hyA8sWqy5lbdO543je_tGYKA&pp=0gcJCbAEOCosWNin",
-        title: "2 0 1 9",
-        format: "EP",
-        artistUrl: "https://atendi.men/music",
-        artist: "JOZÜEMARSH",
-      },
-      {
-        text1: "2018",
-        url: "https://www.youtube.com/watch?v=kPXs6hi1_Ek",
-        title: "Summer",
-        format: "Single",
-        artistUrl: "https://atendi.men/music",
-        artist: "JOZÜEMARSH & Pablo Ruan",
-      },
-      {
-        url: "https://www.youtube.com/watch?v=l5wfmSMPHvg",
-        title: "Filing (feat. Michael Mayo)",
-        format: "Single",
-        artistUrl: "https://atendi.men/music",
-        artist: "JOZÜEMARSH & DARKS Music",
-      },
-    ],
-    featuring: [
-      {
-        text1: "2020",
-        url: "https://www.youtube.com/watch?v=zsno7r2FFWM",
-        title: "Feel the Bass",
-        format: "Single",
-        artistUrl: "https://open.spotify.com/intl-pt/album/7zeb0mZyPkFR33HXmxBtjI?si=zYyKzgw4RluTfD6n0hkdUQ",
-        artist: "D44RK & JOZÜEMARSH",
-      },
-      {
-        text1: "2019",
-        url: "https://www.youtube.com/watch?v=oEAmQ7TBKdY",
-        title: "Feelings (JOZÜEMARSH Remix)",
-        format: "Single",
-        artistUrl: "https://music.apple.com/album/feelings-joz%C3%BCemarsh-remix-single/1451002427",
-        artist: "Pablo Ruan",
-      },
-      {
-        text1: "2018",
-        url: "https://www.youtube.com/watch?v=_Alf6yqYokA",
-        title: "Retro Party",
-        format: "Single",
-        artistUrl: "https://atendi.men/music",
-        artist: "BRØ DUBZ",
-      },
-      {
-        url: "https://www.youtube.com/watch?v=HFki8OwAbRw",
-        title: "Hello Jester4 (JOZÜEMARSH Remix)",
-        format: "EP",
-        artistUrl: "https://music.apple.com/album/hello-jester4-joz%C3%BCemarsh-remix/1434919493?i=1434919499",
-        artist: "DishierJester4",
-      },
-    ],
-  },
-
-  // ── Eventos ───────────────────────────────────────────────────────────────
+  production: [
+    {
+      text1: "Músicas Publicadas",
+      child: [
+        {
+          text1: "2025",
+          link2: "https://www.youtube.com/watch?v=5YbPwWMYeQU",
+          imgSrc: "media/Cover/Luxury and Progress.png",
+          text2: "Luxury and Progress",
+          text3: "Single",
+          link4: "https://atendi.men/music",
+          text4: "JOZÜEMARSH",
+        },
+        {
+          text1: "2025",
+          link2: "https://www.youtube.com/watch?v=CNyYqTGtavg",
+          imgSrc: "media/Cover/Soul.png",
+          text2: "Soul",
+          text3: "Single",
+          link4: "https://atendi.men/music",
+          text4: "JOZÜEMARSH",
+        },
+        {
+          text1: "2024",
+          link2: "https://www.youtube.com/watch?v=EFUJJurtffI",
+          imgSrc: "media/Cover/Get It Up (VIP Remix).png",
+          text2: "Get It Up (VIP Remix)",
+          text3: "Single",
+          link4: "https://atendi.men/music",
+          text4: "JOZÜEMARSH",
+        },
+        {
+          text1: "2024",
+          link2: "https://www.youtube.com/watch?v=ZEou6RmbadU",
+          imgSrc: "media/Cover/Get It Up.png",
+          text2: "Get It Up",
+          text3: "Single",
+          link4: "https://atendi.men/music",
+          text4: "JOZÜEMARSH",
+        },
+        {
+          text1: "2022",
+          link2: "https://www.youtube.com/watch?v=8xB-i9omrz0",
+          imgSrc: "media/Cover/Beija-Flor.png",
+          text2: "Beija-Flor",
+          text3: "Single",
+          link4: "https://atendi.men/music",
+          text4: "JOZÜEMARSH",
+        },
+        {
+          text1: "2022",
+          link2: "https://www.youtube.com/watch?v=Rw_aVQAXsuU",
+          imgSrc: "media/Cover/Lost In a Box.png",
+          text2: "Lost In a Box",
+          text3: "Single",
+          link4: "https://atendi.men/music",
+          text4: "JOZÜEMARSH",
+        },
+        {
+          text1: "2019",
+          link2: "https://www.youtube.com/watch?v=Ls7WxZzpHAM",
+          imgSrc: "media/Cover/Lavender Town.png",
+          text2: "Lavender Town",
+          text3: "Single",
+          link4: "https://atendi.men/music",
+          text4: "JOZÜEMARSH",
+        },
+        {
+          text1: "2019",
+          link2: "https://www.youtube.com/watch?v=4ji4ASp5jxE",
+          imgSrc: "media/Cover/Raven.png",
+          text2: "Raven",
+          text3: "Single",
+          link4: "https://atendi.men/music",
+          text4: "JOZÜEMARSH",
+        },
+        {
+          text1: "2019",
+          link2: "https://www.youtube.com/watch?v=hfUtlC4Z1R4",
+          imgSrc: "media/Cover/Life.png",
+          text2: "Life",
+          text3: "Single",
+          link4: "https://atendi.men/music",
+          text4: "JOZÜEMARSH",
+        },
+        {
+          text1: "2019",
+          link2:
+            "https://www.youtube.com/watch?v=JoxxyxbKBSA&list=OLAK5uy_lDK8jUK50hyA8sWqy5lbdO543je_tGYKA&pp=0gcJCbAEOCosWNin",
+          imgSrc: "media/Cover/2 0 1 9 EP.png",
+          text2: "2 0 1 9",
+          text3: "EP",
+          link4: "https://atendi.men/music",
+          text4: "JOZÜEMARSH",
+        },
+        {
+          text1: "2018",
+          link2: "https://www.youtube.com/watch?v=kPXs6hi1_Ek",
+          imgSrc: "media/Cover/Summer.png",
+          text2: "Summer",
+          text3: "Single",
+          link4: "https://atendi.men/music",
+          text4: "JOZÜEMARSH & Pablo Ruan",
+        },
+        {
+          text1: "2018",
+          link2: "https://www.youtube.com/watch?v=l5wfmSMPHvg",
+          imgSrc: "media/Cover/Filing.png",
+          text2: "Filing (feat. Michael Mayo)",
+          text3: "Single",
+          link4: "https://atendi.men/music",
+          text4: "JOZÜEMARSH & DARKS Music",
+        },
+      ],
+    },
+    {
+      text1: "Participações em Músicas Publicadas",
+      child: [
+        {
+          text1: "2020",
+          link2: "https://www.youtube.com/watch?v=zsno7r2FFWM",
+          imgSrc: "media/Cover/Feel the Bass.png",
+          text2: "Feel the Bass",
+          text3: "Single",
+          link4: "https://open.spotify.com/intl-pt/album/7zeb0mZyPkFR33HXmxBtjI?si=zYyKzgw4RluTfD6n0hkdUQ",
+          text4: "D44RK & JOZÜEMARSH",
+        },
+        {
+          text1: "2019",
+          link2: "https://www.youtube.com/watch?v=oEAmQ7TBKdY",
+          imgSrc: "media/Cover/Feelings Remix.png",
+          text2: "Feelings (JOZÜEMARSH Remix)",
+          text3: "Single",
+          link4: "https://music.apple.com/album/feelings-joz%C3%BCemarsh-remix-single/1451002427",
+          text4: "Pablo Ruan",
+        },
+        {
+          text1: "2018",
+          link2: "https://www.youtube.com/watch?v=_Alf6yqYokA",
+          imgSrc: "media/Cover/Retro Party.png",
+          text2: "Retro Party",
+          text3: "Single",
+          link4: "https://atendi.men/music",
+          text4: "BRØ DUBZ",
+        },
+        {
+          text1: "2018",
+          link2: "https://www.youtube.com/watch?v=HFki8OwAbRw",
+          imgSrc: "media/Cover/Hello Jester4 Remix.png",
+          text2: "Hello Jester4 (JOZÜEMARSH Remix)",
+          text3: "EP",
+          link4: "https://music.apple.com/album/hello-jester4-joz%C3%BCemarsh-remix/1434919493?i=1434919499",
+          text4: "DishierJester4",
+        },
+      ],
+    },
+  ],
   event: [
     {
       text1: "2026",
@@ -1005,7 +1053,6 @@ const DATA = {
       text4: "Feira",
     },
   ],
-
   teaching: [
     {
       link1: "",
@@ -1085,16 +1132,18 @@ const DATA = {
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Utilitários
-const el = (selector) => document.querySelector(selector),
-      link = (url, content, cls = "") =>
-    url ? `<a href="${url}" target="_blank"${cls ? ` class="${cls}"` : ""}>${content}</a>` : content;
+const el = (selector) => document.querySelector(selector);
+const link = (url, content, cls = "") => {
+  return url ? `<a href="${url}" target="_blank"${cls ? ` class="${cls}"` : ""}>${content}</a>` : content;
+};
 
 function renderItem(leftHtml, rightHtml, extraClass = "") {
   return `
     <div class="item${extraClass ? " " + extraClass : ""}">
       <div class="col end">${leftHtml}</div>
       <div class="col">${rightHtml}</div>
-    </div>`;
+    </div>
+  `;
 }
 
 function inject(sectionId, html) {
@@ -1119,94 +1168,56 @@ function renderUpdate() {
   if (span) span.textContent = DATA.update.date;
 }
 
-// ── Idiomas ───────────────────────────────────────────────────────────────────
-function renderLanguage() {
-  const section = el("#language");
-  if (!section) return;
-  const contents = section.querySelectorAll(".content");
-
-  // Bloco Básico
-  const basicHtml = DATA.language.basic
-    ? [
-        renderItem(`<span class="h6"><b>Básico</b></span>`, `<span class="h6"></span>`),
-        ...DATA.language.basic
-          .filter((d) => d.active !== false)
-          .map((d) =>
-            renderItem(
-              `<img decoding="async" src="${d.imgSrc}" title="" alt="" loading="lazy" />`,
-              `<span class="h6">${d.name}</span>
-         ${link(d.url, `<span class="h6">Duolingo</span>`)}`
-            )
-          ),
-      ]
-    : [].join("");
-
-  // Bloco Nativo
-  const nativeHtml = [
-    renderItem(`<span class="h6"><b>Nativo</b></span>`, `<span class="h6"></span>`),
-    ...DATA.language.native.map((d) =>
-      renderItem(
-        `<img decoding="async" src="${d.imgSrc}" title="" alt="" loading="lazy" />`,
-        `<span class="h6">${d.name}</span>
-       ${link(d.url, `<span class="h6">${d.text3}</span>`)}`
-      )
-    ),
-  ].join("");
-
-  //   if (contents[0]) contents[0].innerHTML = basicHtml;
-  //   if (contents[1]) contents[1].innerHTML = nativeHtml;
-  if (contents[0]) contents[0].innerHTML = [basicHtml + nativeHtml];
-}
-
-// ── Produções ─────────────────────────────────────────────────────────────────
-function renderProduction() {
-  const section = el("#production");
-  if (!section) return;
-  const contents = section.querySelectorAll(".content");
-
-  const musicItem = (d) =>
-    renderItem(
-      `<span class="h6">${d.text1 || "&nbsp;"}</span>`,
-      `${link(d.url, `<span class="h5">${d.title}</span>`)}
-     <span class="h6">${d.format}</span>
-     ${link(d.artistUrl, `<span class="h6">${d.artist}</span>`)}`
-    );
-
-  const ownHtml = [
-    renderItem(`<span class="h6"><b>Músicas Publicadas</b></span>`, `<span class="h6"></span>`),
-    ...DATA.production.own.map(musicItem),
-  ].join("");
-
-  const featHtml = [
-    renderItem(`<span class="h6"><b>Participações em Músicas Publicadas</b></span>`, `<span class="h6"></span>`),
-    ...DATA.production.featuring.map(musicItem),
-  ].join("");
-
-  //   if (contents[0]) contents[0].innerHTML = ownHtml;
-  //   if (contents[1]) contents[1].innerHTML = featHtml;
-  if (contents[0]) contents[0].innerHTML = [ownHtml + featHtml];
-}
-
 // ── Padrão ────────────────────────────────────────────────────────────────────
 function renderSection(id) {
   try {
-    if (!id) return;
-    const html = DATA[id]
-      .filter((d) => d.active !== false)
-      .map((d) =>
-        renderItem(
-          `
+    if (!id) throw new Error("ID da seção não fornecido");
+    if (!typeof DATA === "object" && DATA !== null) throw new Error(`Os dados não são um objeto válido`);
+    if (!DATA[id]) throw new Error(`Nenhum dado encontrado para a seção "${id}"`);
+
+    const data = DATA[id];
+    const isArray = (v) => Array.isArray(v);
+    const isObject = (v) => typeof v === "object" && v !== null;
+    const htmlForObject = (d) =>
+      renderItem(
+        `
           ${link(d.link1, d.text1 ? `<span class="h6 inlinetext" style="--line-clamp: 3;">${d.text1}</span>` : "")}
           ${d.imgSrc ? `<img decoding="async" src="${d.imgSrc}" title="${d.imgAlt || ""}" alt="${d.imgAlt || ""}" loading="lazy" />` : '<div class="img"></div>'}`,
-          `
+        `
           ${link(d.link2, d.text2 ? `<span class="h5 inlinetext" style="--line-clamp: 2;">${d.text2}</span>` : "")}
           ${link(d.link3, d.text3 ? `<span class="h6 inlinetext" style="--line-clamp: 1;">${d.text3}</span>` : "")}
           ${link(d.link4, d.text4 ? `<span class="h6 inlinetext" style="--line-clamp: 1;">${d.text4}</span>` : "")}
           ${link(d.link5, d.text5 ? `<span class="h6 inlinetext" style="--line-clamp: 1;">${d.text5}</span>` : "")}`,
-          d.linked ? "linked" : ""
-        )
-      )
+        d.linked ? "linked" : ""
+      );
+    const htmlForArray = (d) =>
+      [
+        renderItem(
+          `${link(d.link1, d.text1 ? `<span class="h6 inlinetext" style="--line-clamp: 2;"><b>${d.text1}</b></span>` : `<span class="h6">&nbsp;</span>`)}`,
+          `${link(d.link2, d.text2 ? `<span class="h6 inlinetext" style="--line-clamp: 1;"><b>${d.text2}</b></span>` : `<span class="h6">&nbsp;</span>`)}`
+        ),
+        d.child
+          ? d.child
+              .filter((d) => d.active !== false)
+              .map((v) => htmlForObject(v))
+              .join("")
+          : null,
+      ].join("");
+    const html = data
+      .filter((d) => d.active !== false)
+      .map((d) => {
+        if (isObject(d)) {
+          if (d.child) {
+            return htmlForArray(d);
+          } else {
+            return htmlForObject(d);
+          }
+        } else {
+          console.log("Há algo de errado com estes dados");
+        }
+      })
       .join("");
+
     inject(id, html);
   } catch (error) {
     console.error(`Erro ao renderizar seção "${id}":`, error);
@@ -1284,9 +1295,9 @@ document.addEventListener("DOMContentLoaded", () => {
   renderSection("teaching");
   renderSection("job");
   renderSection("project");
-  // renderLanguage();
+  renderSection("language");
   renderSection("award");
-  // renderProduction();
+  renderSection("production");
   renderSection("magazine");
   renderSection("event");
   renderSection("guidelines");
