@@ -1193,7 +1193,7 @@ function renderSection(id) {
     const htmlForArray = (d) =>
       [
         renderItem(
-          `${link(d.link1, d.text1 ? `<span class="h6 inlinetext" style="--line-clamp: 2;"><b>${d.text1}</b></span>` : `<span class="h6">&nbsp;</span>`)}`,
+          `${link(d.link1, d.text1 ? `<span class="h6 inlinetext" style="--line-clamp: 3;"><b>${d.text1}</b></span>` : `<span class="h6">&nbsp;</span>`)}`,
           `${link(d.link2, d.text2 ? `<span class="h6 inlinetext" style="--line-clamp: 1;"><b>${d.text2}</b></span>` : `<span class="h6">&nbsp;</span>`)}`
         ),
         d.child
